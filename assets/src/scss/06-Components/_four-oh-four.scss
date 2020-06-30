@@ -1,0 +1,49 @@
+.c-four-oh-four {
+    height: 100vh;
+    padding-top: 85px;
+    min-height: 450px;
+    background-color: color(black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../images/four-oh-four-background.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 70vw;
+
+    @include media-breakpoint-down(xl) {
+        background-size: 50vw;
+    }
+
+    @include media-breakpoint-down(sm) {
+        background-size: 100vw;
+    }
+
+    @include media-breakpoint-down(xs) {
+        padding: 0 0 100px;
+    }
+
+    &__title {
+        font-size: 120px;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 70px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 70px;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 50px;
+        }
+    }
+
+    &__text {
+        font-size: 35px;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 20px;
+        }
+    }
+}

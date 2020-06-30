@@ -1,0 +1,35 @@
+.h-color-white {
+    color: color(white);
+}
+
+.h-color-pink {
+    color: color(pink);
+}
+
+.h-color-lightGrey {
+    color: color(lightGrey);
+}
+
+.h-color-charcoal {
+    color: color(charcoal);
+}
+
+.h-color-black {
+    color: color(black);
+}
+
+.h-color-blue {
+    color: color(royalBlue);
+}
+
+.h-color-slate-grey {
+    color: color(slateGrey);
+}
+
+.h-black-svg {
+    svg {
+        g {
+            stroke: color(black);
+        }
+    }
+}

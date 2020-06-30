@@ -1,0 +1,19 @@
+.c-careers-text-block {
+    background-color: color(aliceBlue);
+    background-image: url('../images/careers-text.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10vw) 100%;
+    padding: 130px 0 115px 0;
+
+    @include media-breakpoint-down(lg) {
+        background-position: 100% 100%;
+    }
+
+    @include media-breakpoint-down(md) {
+        background-size: 40vw;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: 60px 0;
+    }
+}

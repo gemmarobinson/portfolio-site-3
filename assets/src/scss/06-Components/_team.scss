@@ -1,0 +1,118 @@
+.c-team {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+
+    &:first-of-type {
+        margin-top: 50px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 55px;
+        padding: 65px 0 0 0;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        height: 345px;
+        left: -1000px;
+        right: -1000px;
+        bottom: 103px;
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-color: color(whiteSmoke);
+        background-image: url('../images/team-strip-one.svg');
+
+        @include media-breakpoint-down(md) {
+            left: -300px;
+            right: -300px;
+            bottom: 661px;
+        }
+
+        @include media-breakpoint-down(xs) {
+            display: none;
+        }
+    }
+
+    &:after {
+        @include media-breakpoint-down(md) {
+            content: '';
+            position: absolute;
+            height: 345px;
+            bottom: 158px;
+            left: -300px;
+            right: -300px;
+            z-index: -1;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            background-color: color(whiteSmoke);
+            background-image: url('../images/team-strip-one.svg');
+        }
+
+        @include media-breakpoint-down(xs) {
+            display: none;
+        }
+    }
+
+    &__member {
+        width: 25%;
+
+        @include media-breakpoint-down(md) {
+            width: 50%;
+            margin-bottom: 55px;
+            padding: 65px 0 0 0;
+        }
+
+        @include media-breakpoint-down(xs) {
+            width: 100%;
+        }
+    }
+
+    .c-team__image {
+        height: 280px;
+        width: 100%;
+        position: relative;
+
+        &:before {
+            @include media-breakpoint-down(xs) {
+                content: '';
+                position: absolute;
+                height: 345px;
+                top: -65px;
+                left: -15px;
+                right: -15px;
+                z-index: -1;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top left;
+                background-color: color(whiteSmoke);
+                background-image: url('../images/team-strip-one.svg');
+            }
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .c-team__info {
+        margin-top: 20px;
+
+        @include media-breakpoint-up(sm) {
+            height: 83px;
+        }
+
+        p:last-child {
+            @include media-breakpoint-up(lg) {
+                width: 12rem;
+                max-width: 100%;
+            }
+        }
+    }
+}

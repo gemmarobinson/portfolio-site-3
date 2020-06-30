@@ -1,0 +1,15 @@
+.c-solution-intro {
+    padding: 95px 0 105px 0;
+    position: relative;
+
+    .c-solution-intro__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: auto;
+        object-position: top;
+        object-fit: contain;
+        max-width: 40%;
+    }
+}

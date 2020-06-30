@@ -1,0 +1,47 @@
+.c-solutions-hero {
+    min-height: 768px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 340px;
+    padding-top: 200px;
+
+    @include media-breakpoint-down(sm) {
+        min-height: 550px;
+        padding-bottom: 100px;
+        padding-top: 0;
+    }
+
+    .c-solutions-hero__bg-shape {
+        position: absolute;
+        bottom: 0;
+        right: -40px;
+
+        @include media-breakpoint-down(md) {
+            right: 0;
+            width: 400px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            width: 150px;
+        }
+    }
+
+    .c-solutions-hero__anchor {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        bottom: 0;
+
+        &:after {
+            content: '';
+            width: 1px;
+            height: 112px;
+            background-color: color(white);
+            display: block;
+        }
+    }
+}

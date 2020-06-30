@@ -1,0 +1,45 @@
+.c-pagination {
+    display: flex;
+    align-items: center;
+    margin: 15px 0 105px;
+
+    .next {
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+
+    .prev,
+    .next {
+        &:not(.disabled) {
+            svg {
+                path {
+                    transition: 0.3s ease all;
+                    fill: color(royalBlue);
+                }
+
+                circle {
+                    transition: 0.3s ease all;
+                    stroke: color(royalBlue);
+                }
+            }
+        }
+
+        &.disabled {
+            cursor: no-drop;
+            pointer-events: none;
+        }
+    }
+
+    .page-numbers {
+        margin-right: 15px;
+        color: color(granite);
+
+        &:hover,
+        &:active,
+        &:focus,
+        &.current {
+            color: color(royalBlue);
+        }
+    }
+}

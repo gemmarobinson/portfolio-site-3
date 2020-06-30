@@ -1,0 +1,83 @@
+.c-mission {
+    position: relative;
+    padding-top: 100px;
+    background-color: color(aliceBlue);
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 327px;
+        background-color: color(royalBlue);
+    }
+
+    .c-mission__square {
+        position: absolute;
+        top: -35px;
+        left: -20px;
+
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+    }
+
+    .c-mission__circle {
+        position: absolute;
+        top: -50px;
+        right: -30px;
+
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+    }
+
+    .c-mission__image {
+        display: flex;
+
+        @include media-breakpoint-up(xl) {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            align-items: center;
+        }
+
+        @include media-breakpoint-down(lg) {
+            justify-content: center;
+            margin-bottom: -150px;
+        }
+
+        @include media-breakpoint-down(md) {
+            display: block;
+        }
+
+        img {
+            width: 480px;
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+
+            @include media-breakpoint-down(lg) {
+                width: 100%;
+            }
+        }
+    }
+
+    .c-mission__block {
+        border-radius: 1px;
+        box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.11);
+        background-color: color(white);
+        margin: 0 0 0 auto;
+
+        @include media-breakpoint-up(xl) {
+            width: calc(100% - 240px);
+            padding: 77px 63px 96px 340px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            padding: 200px 60px 40px 60px;
+            text-align: center;
+        }
+    }
+}

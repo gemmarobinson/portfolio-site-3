@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="376px" height="1094px" viewBox="0 0 376 1094" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Background Circles</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="392" height="1194"></rect>
+    </defs>
+    <g id="Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About_Master" transform="translate(0.000000, -3075.000000)">
+            <g id="Background-Circles" transform="translate(0.000000, 3046.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <g mask="url(#mask-2)" id="Stroke-1" stroke="#EAF1F9" stroke-dasharray="11.929,11.929" stroke-width="2">
+                    <g transform="translate(-793.000000, -8.000000)">
+                        <path d="M59,584 C59,873.948814 294.051186,1109 584,1109 C873.948814,1109 1109,873.948814 1109,584 C1109,294.051186 873.948814,59 584,59 C294.051186,59 59,294.051186 59,584 Z"></path>
+                        <path d="M0,584 C0,906.533538 261.466462,1168 584,1168 C906.533538,1168 1168,906.533538 1168,584 C1168,261.466462 906.533538,0 584,0 C261.466462,0 0,261.466462 0,584 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

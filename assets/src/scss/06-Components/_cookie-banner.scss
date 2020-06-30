@@ -1,0 +1,23 @@
+.c-cookie-banner {
+    display: none;
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    background-color: color(white);
+    border-radius: 5px;
+    max-width: 285px;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.11);
+    padding: 25px;
+    z-index: 99;
+
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        i {
+            font-size: 24px;
+            color: color(royalBlue);
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.c-about {
+    position: relative;
+    padding-top: 160px;
+
+    @include media-breakpoint-down(md) {
+        padding-top: 90px;
+    }
+
+    &__background {
+        position: absolute;
+        left: 0;
+        top: 40%;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+}

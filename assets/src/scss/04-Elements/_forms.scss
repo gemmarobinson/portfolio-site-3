@@ -1,0 +1,97 @@
+.wpcf7-form {
+    input[type='email'],
+    input[type='number'],
+    input[type='search'],
+    input[type='text'],
+    input[type='tel'],
+    input[type='url'],
+    input[type='password'],
+    textarea,
+    select {
+        border-radius: 0;
+        -webkit-appearance: none; // For iOS, but this *may* cause disappearance on Desktoxp.
+        width: 100%;
+        border-radius: 5px;
+        min-height: 46px;
+        padding: 15px 18px;
+        border: solid 1px color(platinum);
+        display: block;
+        background-color: transparent;
+        color: color(granite);
+        transition: 0.3s ease;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    textarea {
+        resize: none;
+        height: 199px;
+    }
+
+    label {
+        display: inline-block;
+        margin: 0;
+        position: absolute;
+        left: 18px;
+        top: 17px;
+        pointer-events: none;
+        transition: 0.2s ease all;
+        color: color(silver);
+    }
+
+    input[type='submit'] {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: color(royalBlue);
+        min-width: 157px;
+        height: 45px;
+        border-radius: 2px;
+        font-family: $headings-font-family;
+        font-weight: $font-weight-bolden;
+        color: color(white);
+        border: 0;
+        margin-left: auto;
+        transition: 0.3s ease;
+
+        &:hover,
+        &:active,
+        &:focus {
+            text-decoration: none;
+            background-color: darken(color(royalBlue), 10%);
+            color: color(white);
+        }
+    }
+
+    .c-form__group {
+        position: relative;
+        margin-bottom: 20px;
+        transition: 0.3s ease all;
+
+        &.has-value {
+            label {
+                color: color(royalBlue);
+                top: -8px;
+                font-size: 12px;
+                left: 13px;
+                padding: 0 5px;
+                background: white;
+                border-radius: 4px;
+            }
+
+            input[type='email'],
+            input[type='number'],
+            input[type='search'],
+            input[type='text'],
+            input[type='tel'],
+            input[type='url'],
+            input[type='password'],
+            textarea,
+            select {
+                border-color: color(royalBlue);
+            }
+        }
+    }
+}

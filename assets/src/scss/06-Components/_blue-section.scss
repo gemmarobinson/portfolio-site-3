@@ -1,0 +1,8 @@
+.c-blue-section {
+    padding: 105px 0 70px 0;
+    background-color: color(lightBlue);
+
+    @include media-breakpoint-down(sm) {
+        padding: 60px 0 70px 0;
+    }
+}

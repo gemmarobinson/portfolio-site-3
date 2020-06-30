@@ -1,0 +1,16 @@
+.h-offset-left {
+    padding-left: 4rem;
+
+    @include media-breakpoint-down(lg) {
+        padding-left: 3.6rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.h-overflow-hidden {
+    overflow: hidden;
+}

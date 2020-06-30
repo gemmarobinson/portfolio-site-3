@@ -1,0 +1,26 @@
+.c-offices {
+    display: flex;
+    align-items: flex-start;
+
+    @include media-breakpoint-up(md) {
+        margin-bottom: 90px;
+    }
+
+    @include media-breakpoint-down(md) {
+        justify-content: space-between;
+    }
+
+    @include media-breakpoint-down(sm) {
+        flex-direction: column;
+    }
+
+    &__single {
+        @include media-breakpoint-up(lg) {
+            margin-right: 90px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 30px;
+        }
+    }
+}

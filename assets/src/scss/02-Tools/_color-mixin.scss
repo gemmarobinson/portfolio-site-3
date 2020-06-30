@@ -1,0 +1,10 @@
+@function color($color-name) {
+    @if map-has-key($colors, $color-name) {
+        @return map-get($colors, $color-name);
+    } @else {
+        @if type-of($color-name) != $color-name {
+            @error "Invalid colour name: `#{$color-name}`.";
+        }
+    }
+}
+// USAGE: color(black);

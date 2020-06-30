@@ -1,0 +1,87 @@
+/*----------------------------------------
+  # Colours
+----------------------------------------*/
+$colors: (
+    black: #171b23,
+    blue-grey: #686c87,
+    white: #fff,
+    whiteSmoke: #f6f6f6,
+    lightGrey: #757575,
+    platinum: #e7e7e9,
+    spanishGrey: #979797,
+    grey: #eaeaea,
+    slateGrey: #6f708e,
+    silver: #adadb7,
+    granite: #676876,
+    darkGrey: #6c6c6c,
+    charcoal: #ababab,
+    royalBlue: #3d63ff,
+    mayaBlue: #58c2f9,
+    aliceBlue: #f0f5fb,
+    lightBlue: #e7f3f3,
+    pastelBlue: #b2d3d3,
+    orange: #ffa43e,
+    coral: #fb7870,
+    green: #99d94f,
+    piggyPink: #ffe0e7,
+    pink: #ff4a75,
+    error: #ff4441,
+);
+// USAGE: color(black);
+
+/* ------------------------------------
+  # GENERAL
+-------------------------------------- */
+
+$font-weight-normal: 400;
+$font-weight-bolden: 600;
+
+// Required if using the background helpers
+$overlay-background-colour: rgba(0, 0, 0, 0.76);
+$overlay-gradient-colour: '{{ Linear RGBA Gradient }}';
+
+/*----------------------------------------
+  # Typography
+----------------------------------------*/
+
+$headings-font-family: sofia-pro, sans-serif;
+$headings-color: color(black);
+
+// H1
+$h1-font-size: 50px;
+$h1-line-height: 1.2;
+$h1-font-weight: 700;
+
+// H2
+$h2-font-size: 42px;
+$h2-line-height: 1.2;
+$h2-font-weight: 600;
+
+// h3
+$h3-font-size: 22px;
+$h3-line-height: 1.5;
+$h3-font-weight: 600;
+
+// h4
+$h4-font-size: 16px;
+$h4-line-height: normal;
+$h4-font-weight: 600;
+
+// h5
+$h5-font-size: 16px;
+$h5-line-height: normal;
+$h5-font-weight: 600;
+
+// h6
+$h6-font-size: 16px;
+$h6-line-height: normal;
+$h6-font-weight: 600;
+
+// Paragraph
+$paragraph-size: 16px;
+$paragraph-line-height: normal;
+$paragraph-color: color(granite);
+$paragraph-font-weight: $font-weight-normal;
+$paragraph-font-family: poppins, sans-serif;
+
+$small-paragraph-size: 12px;

@@ -1,0 +1,74 @@
+.c-select {
+    margin-left: 12px;
+    position: relative;
+    z-index: 2;
+
+    select {
+        width: 200px;
+        background-color: transparent;
+        border: none;
+        font-size: $h2-font-size;
+        font-weight: $font-weight-bolden;
+        font-family: $headings-font-family;
+        color: color(royalBlue);
+        transition: 0.3s ease-out;
+        background-image: url('../images/select-arrow.svg');
+        background-size: 9px;
+        background-repeat: no-repeat;
+        background-position: right 60%;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+
+        @include media-breakpoint-down(md) {
+            font-size: 32px;
+        }
+
+        @include media-breakpoint-down(xs) {
+            font-size: 26px;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    select::-ms-expand {
+        display: none;
+    }
+
+    &:before {
+        content: '';
+        height: 1px;
+        background-color: color(royalBlue);
+        position: absolute;
+        bottom: 6px;
+        left: 3px;
+        right: 25px;
+        z-index: -1;
+    }
+
+    &--pink {
+        select {
+            color: color(pink);
+            background-image: url('../images/select-arrow-pink.svg');
+        }
+
+        &:before {
+            background-color: color(pink);
+        }
+    }
+
+    &--news {
+        select {
+            background-position: calc(100% - 20px) 60%;
+            padding: 0;
+        }
+
+        &:before {
+            bottom: 0px;
+            left: 0;
+            width: calc(100% - 40px);
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.c-benefit {
+    display: flex;
+    align-items: center;
+
+    @include media-breakpoint-down(xs) {
+        align-items: flex-start;
+    }
+
+    &:not(:last-of-type) {
+        margin-bottom: 40px;
+    }
+
+    &__image {
+        background-color: color(pink);
+        width: 112px;
+        height: 112px;
+        border-radius: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include media-breakpoint-down(xs) {
+            width: 70px;
+            height: 70px;
+            padding: 10px;
+        }
+    }
+
+    > p {
+        width: 315px;
+        max-width: 100%;
+        margin-left: 29px;
+
+        @include media-breakpoint-down(xs) {
+            width: calc(100% - 99px);
+        }
+    }
+}

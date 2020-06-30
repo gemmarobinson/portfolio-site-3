@@ -1,0 +1,144 @@
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    color: $headings-color;
+    font-family: $headings-font-family;
+    margin: 0 0 22px 0;
+}
+
+h1,
+.h1 {
+    font-size: $h1-font-size;
+    line-height: $h1-line-height;
+    font-weight: $h1-font-weight;
+
+    @include media-breakpoint-down(md) {
+        font-size: 40px;
+    }
+
+    @include media-breakpoint-down(xs) {
+        font-size: 32px;
+    }
+}
+
+h2,
+.h2 {
+    font-size: $h2-font-size;
+    line-height: $h2-line-height;
+    font-weight: $h2-font-weight;
+
+    @include media-breakpoint-down(md) {
+        font-size: 32px;
+    }
+
+    @include media-breakpoint-down(xs) {
+        font-size: 26px;
+    }
+}
+
+h3,
+.h3 {
+    font-size: $h3-font-size;
+    line-height: $h3-line-height;
+    font-weight: $h3-font-weight;
+
+    @include media-breakpoint-down(xs) {
+        font-size: 18px;
+    }
+}
+
+h4,
+.h4 {
+    font-size: $h4-font-size;
+    line-height: $h4-line-height;
+    font-weight: $h4-font-weight;
+}
+
+h5,
+.h5 {
+    font-size: $h5-font-size;
+    line-height: $h5-line-height;
+    font-weight: $h5-font-weight;
+}
+
+h6,
+.h6 {
+    font-size: $h6-font-size;
+    line-height: $h6-line-height;
+    font-weight: $h6-font-weight;
+}
+
+// Paragraph & Misc
+p,
+.paragraph {
+    margin: 0 0 22px 0;
+    font-size: $paragraph-size;
+    line-height: $paragraph-line-height;
+    font-family: $paragraph-font-family;
+    color: $paragraph-color;
+    font-weight: $paragraph-font-weight;
+    letter-spacing: -0.08px;
+
+    &--small {
+        font-size: $small-paragraph-size;
+    }
+}
+
+ul,
+ol {
+    margin-top: 0;
+
+    li {
+        font-family: $paragraph-font-family;
+        font-size: $paragraph-size;
+        color: $paragraph-color;
+        vertical-align: middle; // prevents bottom margin
+        letter-spacing: -0.08px;
+    }
+}
+
+a {
+    font-family: $paragraph-font-family;
+    transition: 0.3s ease-out;
+    letter-spacing: -0.08px;
+    color: color(royalBlue);
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: color(pink);
+    }
+}
+
+p {
+    a {
+        font-weight: $font-weight-bolden;
+        text-decoration: underline;
+    }
+}
+
+em,
+i {
+    font-style: italic;
+}
+strong,
+b {
+    font-weight: $font-weight-bolden;
+}
+
+blockquote {
+    border-left: 4px solid color(pink);
+    font-size: 1em;
+    margin: 0 0 2rem 0;
+    padding-left: 20px;
+}

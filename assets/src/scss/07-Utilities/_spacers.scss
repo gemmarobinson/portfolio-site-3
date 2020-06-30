@@ -1,0 +1,7 @@
+.h-pb-44 {
+    padding-bottom: 8.8rem;
+
+    @include media-breakpoint-down(md) {
+        padding-bottom: 4.4rem;
+    }
+}

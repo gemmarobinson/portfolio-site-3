@@ -1,0 +1,83 @@
+.c-careers-card {
+    box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 120px;
+    padding: 45px 55px 60px;
+    background-image: url('../images/careers-card-background.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+
+    @include media-breakpoint-down(sm) {
+        background-size: 30%;
+        margin-bottom: 60px;
+    }
+
+    &:first-child {
+        margin-top: 120px;
+
+        @include media-breakpoint-down(sm) {
+            margin-top: 60px;
+        }
+    }
+
+    &__title {
+        font-size: 30px;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 26px;
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-bottom: 25px;
+            position: relative;
+            padding-left: 20px;
+
+            &:before {
+                content: '';
+                width: 8px;
+                height: 8px;
+                border-radius: 100%;
+                position: absolute;
+                top: 8px;
+                left: 0;
+            }
+        }
+    }
+
+    &--birmingham {
+        border-left: 7px solid color(pink);
+
+        .c-careers-card__location {
+            color: color(pink);
+        }
+
+        ul {
+            li {
+                &:before {
+                    background-color: color(pink);
+                }
+            }
+        }
+    }
+
+    &--dublin {
+        border-left: 7px solid color(pink);
+
+        .c-careers-card__location {
+            color: color(pink);
+        }
+
+        ul {
+            li {
+                &:before {
+                    background-color: color(pink);
+                }
+            }
+        }
+    }
+}

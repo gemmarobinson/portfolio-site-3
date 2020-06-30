@@ -1,0 +1,52 @@
+.c-timeline-arrows {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 8px;
+    right: 130px;
+
+    @include media-breakpoint-down(lg) {
+        bottom: -15px;
+    }
+
+    @include media-breakpoint-down(md) {
+        // bottom: 0;
+        left: 0;
+        right: 0;
+        justify-content: center;
+    }
+
+    @include media-breakpoint-down(xs) {
+        left: unset;
+        right: unset;
+        bottom: unset;
+        position: relative;
+    }
+
+    &__single {
+        width: 53px;
+        height: 53px;
+        background-color: color(royalBlue);
+        border-radius: 100%;
+        margin: 0 9px;
+        background-image: url('../images/play-icon-white.svg');
+        background-size: 10px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        transition: 0.3s ease-out;
+
+        &:first-of-type {
+            transform: rotate(180deg);
+        }
+
+        &.slick-disabled {
+            width: 31px;
+            height: 31px;
+            background-color: #dde1e6;
+            background-image: url('../images/play-icon-grey.svg');
+            background-size: 6px;
+            cursor: not-allowed;
+        }
+    }
+}

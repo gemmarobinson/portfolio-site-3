@@ -1,0 +1,115 @@
+/* ------------------------------------
+	# IMPORTS
+-------------------------------------- */
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/animate.css/animate';
+@import 'node_modules/@fortawesome/fontawesome-pro/scss/fontawesome';
+@import 'node_modules/@fortawesome/fontawesome-pro/scss/regular';
+@import 'node_modules/@fortawesome/fontawesome-pro/scss/solid';
+@import 'node_modules/@fortawesome/fontawesome-pro/scss/light';
+@import 'node_modules/@fortawesome/fontawesome-pro/scss/brands';
+@import 'vendor/slick';
+
+/* ------------------------------------
+	# 01-Settings
+-------------------------------------- */
+
+@import '01-Settings/variables';
+@import '01-Settings/reset';
+
+/* ------------------------------------
+	# 02-Tools
+-------------------------------------- */
+
+@import '02-Tools/color-mixin';
+
+/* ------------------------------------
+	# 03-Generic
+-------------------------------------- */
+
+@import '03-Generic/wp-core';
+@import '03-Generic/wp-login';
+
+/* ------------------------------------
+	# 04-Elements
+-------------------------------------- */
+
+@import '04-Elements/typography';
+@import '04-Elements/forms';
+
+/* ------------------------------------
+	# 05-Objects
+-------------------------------------- */
+
+// @import '05-Objects/example';
+
+/* ------------------------------------
+	# 06-COMPONENTS
+-------------------------------------- */
+
+@import '06-Components/header';
+@import '06-Components/footer';
+@import '06-Components/buttons';
+@import '06-Components/select';
+@import '06-Components/header-menu';
+@import '06-Components/home-hero';
+@import '06-Components/clients';
+@import '06-Components/home-solutions';
+@import '06-Components/solutions-card';
+@import '06-Components/cta';
+@import '06-Components/blue-section';
+@import '06-Components/news-card';
+@import '06-Components/footer-solutions';
+@import '06-Components/footer-menu';
+@import '06-Components/socials';
+@import '06-Components/offices';
+@import '06-Components/video-popup';
+@import '06-Components/about-hero';
+@import '06-Components/mission';
+@import '06-Components/values';
+@import '06-Components/timeline-card';
+@import '06-Components/timeline-background';
+@import '06-Components/timeline-arrows';
+@import '06-Components/text-block';
+@import '06-Components/about';
+@import '06-Components/benefit';
+@import '06-Components/team';
+@import '06-Components/benefits-section';
+@import '06-Components/solutions-hero';
+@import '06-Components/solutions-intro';
+@import '06-Components/solutions-clients';
+@import '06-Components/solutions-benefits';
+@import '06-Components/customers-how';
+@import '06-Components/customers-features';
+@import '06-Components/core-feature';
+@import '06-Components/contact';
+@import '06-Components/four-oh-four';
+@import '06-Components/default';
+@import '06-Components/news';
+@import '06-Components/latest';
+@import '06-Components/post-card';
+@import '06-Components/pagination';
+@import '06-Components/single';
+@import '06-Components/careers-text-block';
+@import '06-Components/careers-card';
+@import '06-Components/wpcf7';
+@import '06-Components/cookie-banner';
+
+/* ------------------------------------
+	# 07-Utilities
+-------------------------------------- */
+
+@import '07-Utilities/accessibility';
+@import '07-Utilities/typography';
+@import '07-Utilities/backgrounds';
+@import '07-Utilities/colors';
+@import '07-Utilities/borders';
+@import '07-Utilities/widths';
+@import '07-Utilities/layout';
+@import '07-Utilities/dividers';
+@import '07-Utilities/spacers';
+@import '07-Utilities/zindex';
+
+.grecaptcha-badge {
+    display: none;
+}

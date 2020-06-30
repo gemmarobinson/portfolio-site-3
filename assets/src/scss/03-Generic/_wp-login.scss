@@ -1,0 +1,177 @@
+/*----------------------------------------
+WordPress Login Page
+----------------------------------------*/
+
+body.login {
+    background-color: #f6f6f6;
+    background-image: url(../images/contact-background.svg);
+    background-repeat: no-repeat;
+    background-position: 55vw 100%;
+    font-weight: normal;
+
+    .message {
+        border-left: 4px solid #f4f4f4;
+        color: black;
+        box-shadow: none;
+        font-size: 0.9em;
+
+        &.reset-pass {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    #login_error {
+        font-size: 0.9em;
+        box-shadow: none;
+    }
+
+    div#login {
+        // Logo
+        h1 {
+            a {
+                background: url('../images/utrack-icon.svg') no-repeat;
+                background-position: center;
+                background-size: contain;
+                width: 100%;
+            }
+        }
+
+        // Actual login div
+
+        $form_bg_color: white;
+
+        form#loginform,
+        form#passwordform,
+        form#lostpasswordform,
+        form#resetpassform {
+            background: $form_bg_color;
+            border-radius: 2px;
+            box-shadow: none;
+            padding: 26px 24px 24px;
+            border: none;
+
+            label[for='user_login'],
+            label[for='user_pass'] {
+                font-size: 1rem;
+                color: black;
+                display: block;
+            }
+
+            input[type='text'],
+            input[type='password'] {
+                font-size: 1rem;
+                border-radius: 0;
+                margin-top: 10px;
+                -webkit-appearance: none;
+                width: 100%;
+                border-radius: 5px;
+                box-shadow: none;
+                text-shadow: none;
+                min-height: 46px;
+                padding: 15px 18px;
+                border: solid 1px color(platinum);
+                display: block;
+                background-color: transparent;
+                color: color(granite);
+                transition: 0.3s ease;
+
+                &:focus {
+                    outline: none;
+                    border: solid 1px color(royalBlue);
+                }
+            }
+
+            input[type='submit'] {
+                text-shadow: none;
+                box-shadow: none;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background-color: color(royalBlue);
+                min-width: 157px;
+                height: 45px;
+                border-radius: 2px;
+                font-family: $headings-font-family;
+                font-weight: $font-weight-bolden;
+                color: color(white);
+                border: 0;
+                transition: 0.3s ease all;
+
+                &:hover,
+                &:active,
+                &:focus {
+                    text-decoration: none;
+                    background-color: darken(color(royalBlue), 10%);
+                    color: color(white);
+                }
+
+                &[value='Log In'] {
+                }
+
+                &[value='Get New Password'] {
+                    width: 100%;
+                }
+
+                &[value='Reset Password'] {
+                    width: 100%;
+                }
+            }
+
+            p.forgetmenot {
+                height: 45px;
+                display: flex;
+                align-items: center;
+
+                input[type='checkbox'] {
+                    position: relative;
+                    margin-top: 0;
+                    display: inline-block;
+
+                    &:focus {
+                        border-bottom: none;
+                    }
+
+                    &:checked {
+                        &:before {
+                            line-height: 22px;
+                            font-size: 22px;
+                            color: #696969;
+                        }
+                    }
+                }
+            }
+        }
+
+        form#resetpassform {
+            .wp-pwd {
+                #pass-strength-result {
+                    font-size: 0.9em;
+                }
+
+                // Hidden by default password field on 'Reset Password'
+                .show-password #pass1 {
+                    display: none;
+                }
+            }
+
+            p.indicator-hint {
+                font-size: 0.9em;
+            }
+        }
+
+        // 'Back to Blog' and 'Lost Your Password'
+        p#nav {
+            background: $form_bg_color;
+            margin: 0;
+            padding: 10px 24px 0 24px;
+            font-size: 0.85em;
+        }
+
+        p#backtoblog {
+            background: $form_bg_color;
+            margin: 0;
+            padding: 24px 24px 24px 24px;
+            font-size: 0.85em;
+        }
+    }
+}

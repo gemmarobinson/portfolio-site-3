@@ -1,0 +1,59 @@
+.c-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: color(royalBlue);
+    min-width: 157px;
+    height: 45px;
+    border-radius: 2px;
+    font-family: $headings-font-family;
+    font-weight: $font-weight-bolden;
+    color: color(white);
+    border: 0;
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        background-color: darken(color(royalBlue), 10%);
+        color: color(white);
+    }
+
+    &--white {
+        border: 1px solid color(royalBlue);
+        background-color: color(white);
+        color: color(royalBlue);
+    }
+}
+
+.c-video-btn {
+    min-width: 201px;
+    height: 45px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    background-color: color(pink);
+    font-family: $headings-font-family;
+    font-weight: $font-weight-bolden;
+    color: color(white);
+    border: 0;
+
+    &:after {
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-image: url('../images/play-icon.svg');
+        background-size: contain;
+        background-position: center;
+        margin-left: 10px;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        background-color: darken(color(pink), 10%);
+        color: color(white);
+    }
+}

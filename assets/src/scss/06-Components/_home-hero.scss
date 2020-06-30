@@ -1,0 +1,90 @@
+.c-home-hero {
+    padding: 200px 0;
+    background-color: color(black);
+    background-image: url('../images/headershape.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 60%;
+
+    @include media-breakpoint-down(xs) {
+        padding: 150px 0 200px;
+        background-position: bottom center;
+        background-size: 75%;
+    }
+
+    &__links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            a {
+                height: 59px;
+                display: block;
+                font-size: 35px;
+                font-family: $headings-font-family;
+                line-height: 1.71;
+                letter-spacing: -0.17px;
+                color: color(slateGrey);
+
+                @include media-breakpoint-down(md) {
+                    font-size: 28px;
+                    line-height: 1.5;
+                    height: 45px;
+                }
+
+                @include media-breakpoint-down(xs) {
+                    font-size: 22px;
+                }
+
+                &:after {
+                    content: '';
+                    background-image: url(../images/arrow-in-circle.svg);
+                    background-size: contain;
+                    background-position: 50%;
+                    display: inline-block;
+                    width: 27px;
+                    height: 27px;
+                    vertical-align: middle;
+                    margin: 0 0 6px 9px;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: 0.3s ease-out;
+                }
+
+                &:hover,
+                &:active,
+                &:focus {
+                    text-decoration: none;
+                }
+            }
+
+            &.active,
+            &:hover,
+            &:focus,
+            &:active {
+                a {
+                    font-size: 42px;
+                    font-weight: $font-weight-bolden;
+                    line-height: 1.43;
+                    letter-spacing: -0.21px;
+                    color: color(pink);
+
+                    @include media-breakpoint-down(md) {
+                        font-size: 32px;
+                        line-height: 1.3;
+                    }
+
+                    @include media-breakpoint-down(xs) {
+                        font-size: 26px;
+                    }
+
+                    &:after {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+}

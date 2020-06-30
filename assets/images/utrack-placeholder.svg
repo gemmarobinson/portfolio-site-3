@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="400px" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Group 25</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="-1.1283423%" cy="28.8713407%" fx="-1.1283423%" fy="28.8713407%" r="113.125974%" gradientTransform="translate(-0.011283,0.288713),scale(1.000000,0.629139),rotate(0.288681),translate(0.011283,-0.288713)" id="radialGradient-1">
+            <stop stop-color="#4CBDD8" offset="0%"></stop>
+            <stop stop-color="#4BBAD5" offset="20.77%"></stop>
+            <stop stop-color="#48B0CC" offset="36.81%"></stop>
+            <stop stop-color="#42A0BC" offset="51.27%"></stop>
+            <stop stop-color="#3B88A7" offset="64.79%"></stop>
+            <stop stop-color="#316A8A" offset="77.67%"></stop>
+            <stop stop-color="#254668" offset="89.9%"></stop>
+            <stop stop-color="#1A264A" offset="98.98%"></stop>
+        </radialGradient>
+        <radialGradient cx="48.5856014%" cy="29.2061025%" fx="48.5856014%" fy="29.2061025%" r="74.6648992%" gradientTransform="translate(0.485856,0.292061),scale(1.000000,0.892045),translate(-0.485856,-0.292061)" id="radialGradient-2">
+            <stop stop-color="#E30C15" offset="0%"></stop>
+            <stop stop-color="#E00C15" offset="22.22%"></stop>
+            <stop stop-color="#D60D16" offset="39.54%"></stop>
+            <stop stop-color="#C60F18" offset="55.21%"></stop>
+            <stop stop-color="#AE121B" offset="69.91%"></stop>
+            <stop stop-color="#90151E" offset="83.92%"></stop>
+            <stop stop-color="#6C1922" offset="97.25%"></stop>
+            <stop stop-color="#631A23" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-25">
+            <rect id="Rectangle" fill="#171B23" x="0" y="0" width="400" height="400"></rect>
+            <g id="utrack-symbol" transform="translate(121.000000, 111.000000)" fill-rule="nonzero">
+                <path d="M41.6593996,151.189189 C71.243262,151.189189 87.8281546,123.027831 95,81.4563018 C87.3799142,103.359581 81.5527898,103.359581 79.7598285,103.359581 L79.7598285,103.359581 L79.7598285,103.359581 C77.5186268,103.359581 69.898541,103.359581 59.5890132,66.2581084 C56.8995712,55.9769776 51.9689274,36.3087273 49.7277257,25.5805908 C41.6593996,-11.967887 8.48961451,-4.36879031 3.55897078,25.5805908 C3.11073044,26.9216079 -1.37167296,52.4009321 0.4212884,83.2443246 C0.869528739,88.6083928 1.31776908,93.9724611 1.76600942,99.3365294 C1.76600942,100.230541 2.21424976,100.677546 2.21424976,101.571558 C2.21424976,102.018563 2.21424976,102.912575 2.6624901,103.359581 L2.6624901,103.359581 C4.90369179,115.87574 12.5237776,151.189189 41.6593996,151.189189 Z" id="Path" fill="url(#radialGradient-1)"></path>
+                <path d="M155.375299,25.5759291 C150.456558,-4.36795349 117.366843,-11.965655 109.317994,25.5759291 C107.082202,36.302096 102.163461,55.9667353 99.480511,66.2459785 C97.6918777,72.5029092 96.3504028,77.4190691 94.5617696,81.8883053 C86.51292,107.809875 72.6510125,148.479925 43.1385643,148.479925 C14.0732743,148.479925 4.68294984,116.301424 2,103.340639 L2,103.340639 C3.34147492,111.385264 5.13010815,119.429889 7.81305799,127.474515 C23.910757,175.742266 74.4396458,176.189189 79.3583871,176.189189 L79.3583871,176.189189 L79.3583871,176.189189 C84.2771285,176.189189 134.806017,176.189189 150.903716,127.474515 C165.65994,81.4413816 155.822458,27.3636236 155.375299,25.5759291 Z" id="Path" fill="url(#radialGradient-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

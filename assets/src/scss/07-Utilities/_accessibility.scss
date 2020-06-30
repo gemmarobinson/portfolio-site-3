@@ -1,0 +1,18 @@
+/**
+ *
+ * Name: Accessibility 
+ * Description: Helper for hiding an element from view, but showing it for screen readers
+ *
+ */
+
+.h-accessibility {
+    position: absolute !important;
+    height: 1px !important;
+    width: 1px !important;
+    margin: -1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    clip: rect(0 0 0 0) !important;
+    clip-path: inset(50%) !important;
+    overflow: hidden !important;
+}

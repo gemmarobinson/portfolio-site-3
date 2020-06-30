@@ -1,0 +1,79 @@
+/**
+ *
+ * Name: Reset
+ * Description: Setup a default page without quirks 
+ * State: Red
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    font-size: $paragraph-size;
+    line-height: $paragraph-line-height;
+    font-family: $paragraph-font-family;
+    color: $paragraph-color;
+    overflow-x: hidden;
+}
+
+input[type='button'],
+input[type='submit'],
+.c-btn,
+a {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 22px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+}
+
+ol {
+    padding: 0 0 0 15px;
+
+    li {
+        strong {
+            color: black;
+            font-weight: bold;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+// to stop flash of content
+.wow {
+    visibility: hidden;
+
+    @include media-breakpoint-down(md) {
+        animation-name: none !important;
+        visibility: visible !important;
+    }
+}

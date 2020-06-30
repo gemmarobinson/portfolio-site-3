@@ -1,0 +1,76 @@
+/**
+ *
+ * Name: Backgrounds
+ * Description: 
+ *
+ */
+
+.h-bg-cover {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    position: relative;
+}
+
+.h-overlay {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $overlay-background-colour;
+    position: absolute;
+
+    &--gradient {
+        background-color: $overlay-background-colour;
+        background: $overlay-gradient-colour;
+    }
+}
+
+.h-faded-edges {
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(
+            to right,
+            rgba(234, 234, 234, 1) 0%,
+            rgba(234, 234, 234, 0) 10%,
+            rgba(234, 234, 234, 0) 90%,
+            rgba(234, 234, 234, 1) 100%
+        );
+    }
+}
+
+.h-bg-grey {
+    background-color: color(whiteSmoke);
+}
+
+.h-object-cover {
+    object-fit: cover;
+}
+
+.h-alt-object-fit {
+    // backup for object fit on IE. See JS for how it's added
+    background-size: cover;
+    background-position: center center;
+
+    img {
+        opacity: 0;
+    }
+}
+
+.h-alt-object-fit-contain {
+    // backup for object fit on IE. See JS for how it's added
+    background-size: contain;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+
+    img {
+        opacity: 0;
+    }
+}

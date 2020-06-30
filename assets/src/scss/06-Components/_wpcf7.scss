@@ -1,0 +1,26 @@
+.wpcf7-form {
+    .wpcf7-validates-as-required {
+        transition: 0.3s ease all;
+    }
+
+    &.invalid {
+        .c-form__group:not(.has-value) {
+            .wpcf7-validates-as-required {
+                border-color: color(error);
+            }
+        }
+    }
+
+    .wpcf7-validation-errors {
+        border-color: color(error);
+    }
+}
+
+div.wpcf7-response-output {
+    margin: 20px 0 0 0;
+    border-radius: 2px;
+
+    &.wpcf7-mail-sent-ok {
+        display: none !important;
+    }
+}

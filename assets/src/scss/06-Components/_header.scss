@@ -1,0 +1,23 @@
+.c-header {
+    padding: 20px 0;
+    position: relative;
+    z-index: 3;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    transition: 0.3s ease-out;
+
+    &.stuck {
+        background-color: color(black);
+    }
+}
+.page-template-template-contact,
+.page-template-default,
+.page-template-template-news,
+.single {
+    .c-header {
+        background-color: color(black);
+    }
+}

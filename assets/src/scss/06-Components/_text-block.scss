@@ -1,0 +1,15 @@
+.c-text-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .c-text-block__single {
+        width: 45%;
+        margin-bottom: 100px;
+
+        @include media-breakpoint-down(md) {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+    }
+}

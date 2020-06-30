@@ -1,0 +1,56 @@
+.c-customers-features {
+    padding: 120px 0 135px 0;
+    position: relative;
+
+    @include media-breakpoint-down(md) {
+        padding: 70px 0;
+    }
+
+    .c-customers-features__circles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 35%;
+    }
+
+    .c-customers-features__row {
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s ease-out;
+
+        &:not(:first-of-type) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .c-customers-features__image {
+        padding-right: 50px;
+        position: relative;
+        z-index: 2;
+
+        &:before {
+            content: '';
+            background-color: color(lightBlue);
+            position: absolute;
+            top: -15px;
+            right: 80px;
+            left: -15px;
+            bottom: -15px;
+            z-index: -1;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

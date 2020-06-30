@@ -1,0 +1,28 @@
+.h-pink-divider {
+    width: 112px;
+    height: 2px;
+    background-color: color(pink);
+
+    &--short {
+        width: 23px;
+        height: 3px;
+    }
+}
+
+.h-coral-divider {
+    width: 23px;
+    height: 3px;
+    background-color: color(coral);
+}
+
+.h-grey-divider {
+    width: 100%;
+    height: 1px;
+    background-color: color(spanishGrey);
+}
+
+.h-lightgrey-divider {
+    width: 100%;
+    height: 1px;
+    background-color: color(lightGrey);
+}

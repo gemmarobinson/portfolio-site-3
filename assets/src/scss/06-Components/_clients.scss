@@ -1,0 +1,27 @@
+.c-clients {
+    background-color: color(grey);
+    padding: 47px 0;
+
+    .slick-track {
+        display: flex;
+        align-items: center;
+
+        .slick-slide {
+            margin: 0 20px;
+        }
+    }
+}
+
+.c-clients__logo {
+    svg,
+    img {
+        height: 30px;
+        width: auto;
+        display: block;
+    }
+
+    @include media-breakpoint-down(xs) {
+        width: 100%;
+        text-align: center;
+    }
+}

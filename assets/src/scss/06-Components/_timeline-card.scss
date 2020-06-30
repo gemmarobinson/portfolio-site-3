@@ -1,0 +1,63 @@
+.c-timeline-card {
+    min-height: 368px;
+    border-radius: 1px;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.1);
+    background-color: color(white);
+    margin: 10px;
+    width: 350px;
+    padding: 50px 30px 30px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: 0.3s ease-out;
+
+    @include media-breakpoint-down(md) {
+        width: calc(100% - 30px);
+        margin: 10px auto;
+        border-radius: 5px;
+    }
+
+    .c-timeline-card__year {
+        height: 45px;
+        border-radius: 22.5px;
+        background-color: color(piggyPink);
+        width: 186px;
+        margin: 20px auto;
+
+        p {
+            line-height: 45px;
+            color: color(pink);
+        }
+    }
+
+    > p {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.c-timeline-image {
+    width: 670px;
+    max-width: 60%;
+
+    @include media-breakpoint-down(md) {
+        width: calc(100% - 30px);
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        max-height: 450px;
+        min-height: 368px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 5px;
+
+        @include media-breakpoint-down(md) {
+            min-height: 0;
+        }
+    }
+}
